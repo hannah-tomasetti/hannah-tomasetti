@@ -25,15 +25,16 @@ export default function Hero() {
           style={{
             fontFamily: "'Poppins', sans-serif",
             fontWeight: 900,
-            fontSize: "clamp(52px, 12vw, 160px)",
+            fontSize: "clamp(32px, 9.2vw, 150px)",
             lineHeight: 0.9,
-            letterSpacing: "-0.01em",
+            letterSpacing: "-0.015em",
             textTransform: "uppercase",
             color: "var(--text)",
             willChange: "transform, opacity",
+            whiteSpace: "nowrap",
           }}
         >
-          Hannah<br />Tomasetti
+          Hannah Tomasetti
         </h1>
       </div>
 

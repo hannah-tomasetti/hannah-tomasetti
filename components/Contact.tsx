@@ -129,14 +129,14 @@ export default function Contact() {
       </div>
 
       {/* Giant footer name */}
-      <div style={{ overflow: "hidden", lineHeight: 0.85 }}>
+      <div style={{ overflow: "hidden", lineHeight: 0.85, paddingRight: "0.04em" }}>
         <h2
           style={{
             fontFamily: "'Poppins', sans-serif",
             fontWeight: 900,
-            fontSize: "clamp(52px, 13vw, 180px)",
+            fontSize: "clamp(32px, 9vw, 170px)",
             textTransform: "uppercase",
-            letterSpacing: "-0.01em",
+            letterSpacing: "-0.015em",
             color: "var(--text)",
             whiteSpace: "nowrap",
             userSelect: "none",
