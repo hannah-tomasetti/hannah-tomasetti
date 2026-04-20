@@ -64,3 +64,6 @@ body {
 @media (max-width: 640px) {
   .work-grid { grid-template-columns: 1fr !important; }
 }
+@media (max-width: 640px) {
+  .project-content-row { grid-template-columns: 1fr !important; }
+}

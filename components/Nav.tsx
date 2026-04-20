@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -29,11 +30,11 @@ export default function Nav() {
       }}
     >
       {/* Left */}
-      <a href="#home" className="nav-pill">Home</a>
+      <Link href="/#home" className="nav-pill">Home</Link>
 
       {/* Center wordmark — hidden on mobile, shown on md+ */}
-      <a
-        href="#home"
+      <Link
+        href="/"
         style={{
           fontFamily: "'Poppins', sans-serif",
           fontWeight: 700,
@@ -48,12 +49,12 @@ export default function Nav() {
         className="hidden md:block"
       >
         Hannah Tomasetti
-      </a>
+      </Link>
 
       {/* Right */}
       <div style={{ display: "flex", gap: "10px" }}>
-        <a href="#work" className="nav-pill">Works</a>
-        <a href="#contact" className="nav-pill">Contact</a>
+        <Link href="/work" className="nav-pill">Works</Link>
+        <Link href="/#contact" className="nav-pill">Contact</Link>
       </div>
     </nav>
   );

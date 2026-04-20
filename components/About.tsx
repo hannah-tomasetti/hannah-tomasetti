@@ -36,11 +36,11 @@ export default function About() {
           </h2>
 
           <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(13px, 1.2vw, 15px)", lineHeight: 1.85, color: "var(--text)", fontWeight: 300, marginBottom: "20px" }}>
-            From diving into building a startup to working with established businesses, my main objective is to curate user experiences that feel immersive &amp; intuitive. A core focus in my work process is bridging the gap between art &amp; the ever-evolving tech world.
+            From diving into building a startup to working with established businesses, my main objective is to curate user experiences that feel intuitive. A core focus in my work process is bridging the gap between art &amp; the ever-evolving tech world.
           </p>
 
           <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(13px, 1.2vw, 15px)", lineHeight: 1.85, color: "var(--text-muted)", fontWeight: 300 }}>
-            By leveraging my tech background from Syracuse University iSchool &amp; creative experience from Savannah College of Art &amp; Design… I create brands &amp; campaigns that can connect with audiences both digitally &amp; in person.
+            By leveraging my tech background from Syracuse University iSchool &amp; creative experience from Savannah College of Art &amp; Design… I create brand experiences &amp; campaigns that can connect with audiences both digitally &amp; in person.
           </p>
 
           <div style={{ marginTop: "32px", display: "flex", flexDirection: "column", gap: "10px" }}>
