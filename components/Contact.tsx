@@ -32,7 +32,7 @@ export default function Contact() {
     <section
       id="contact"
       style={{
-        padding: "clamp(40px, 5vw, 80px) clamp(20px, 4vw, 40px) 0",
+        padding: "clamp(40px, 5vw, 80px) clamp(20px, 4vw, 40px)",
         display: "flex",
         flexDirection: "column",
       }}
@@ -49,8 +49,8 @@ export default function Contact() {
         <h2
           style={{
             fontFamily: "'Poppins', sans-serif",
-            fontWeight: 600,
-            fontSize: "clamp(18px, 3vw, 32px)",
+            fontWeight: 700,
+            fontSize: "clamp(28px, 4vw, 48px)",
             letterSpacing: "-0.01em",
             color: "var(--text)",
             marginBottom: "36px",
