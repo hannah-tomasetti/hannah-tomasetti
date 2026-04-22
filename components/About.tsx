@@ -53,7 +53,7 @@ export default function About() {
             ].map(({ name, dates }) => (
               <div key={name} style={{ display: "flex", gap: "10px", alignItems: "center" }}>
                 <div style={{ width: "6px", height: "6px", borderRadius: "50%", background: "var(--text)", flexShrink: 0 }} />
-                <span style={{ fontFamily: "Poppins", fontSize: "0.75rem", letterSpacing: "0.06em", color: "var(--text-muted)" }}>
+                <span style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.5vw, 18px)", letterSpacing: "0.02em", color: "var(--text-muted)" }}>
                   {name} <span style={{ color: "var(--text-muted)", opacity: 0.6 }}>({dates})</span>
                 </span>
               </div>
