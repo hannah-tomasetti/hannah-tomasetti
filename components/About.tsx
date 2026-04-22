@@ -13,7 +13,7 @@ export default function About() {
           display: "grid",
           gridTemplateColumns: "repeat(2, 1fr)",
           gap: "clamp(40px, 5vw, 80px)",
-          alignItems: "start",
+          alignItems: "stretch",
         }}
         className="about-grid"
       >
@@ -28,7 +28,7 @@ export default function About() {
         </div>
 
         {/* Right: copy */}
-        <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", paddingTop: "clamp(0px, 4vw, 40px)" }}>
+        <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
           <h2 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 700, fontSize: "clamp(28px, 4vw, 48px)", letterSpacing: "-0.02em", color: "var(--text)", marginBottom: "clamp(20px, 3vw, 36px)" }}>
             Get to know<br />
             <span style={{ fontStyle: "italic", fontFamily: "Merriweather" }}>Hannah…</span>
