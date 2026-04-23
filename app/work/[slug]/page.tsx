@@ -236,10 +236,7 @@ export default async function ProjectPage(props: PageProps<"/work/[slug]">) {
                     style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
                   />
                   {/* Play button overlay */}
-                  <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", background: "rgba(0,0,0,0.25)", transition: "background 0.2s" }}
-                    onMouseEnter={e => (e.currentTarget as HTMLElement).style.background = "rgba(0,0,0,0.45)"}
-                    onMouseLeave={e => (e.currentTarget as HTMLElement).style.background = "rgba(0,0,0,0.25)"}
-                  >
+                  <div className="yt-overlay">
                     <div style={{ width: "48px", height: "48px", borderRadius: "50%", background: "rgba(255,255,255,0.9)", display: "flex", alignItems: "center", justifyContent: "center" }}>
                       <div style={{ width: 0, height: 0, borderTop: "9px solid transparent", borderBottom: "9px solid transparent", borderLeft: "16px solid #111", marginLeft: "3px" }} />
                     </div>
