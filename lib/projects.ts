@@ -44,6 +44,8 @@ export type Project = {
   imagesBelowOverviewVideo?: string[];
   /** Full-width image after the video block and before the process deck. */
   imageAbovePitchDeck?: string;
+  /** When true, keeps `imageAbovePitchDeck` within the content column (aligned to deck/video width). */
+  imageAbovePitchDeckInset?: boolean;
   /** Video (mp4) shown between the video block and pitch deck, rendered inverted to blend with site bg. */
   videoAbovePitchDeck?: string;
   pitchDeck: string[];
@@ -468,6 +470,8 @@ This project involves industry research, product development, pricing strategy, 
     heroObjectPosition: "60% 44%",
     mockups: [],
     videos: [],
+    imageAbovePitchDeck: "/projects/mara-beauty-above-pitch-deck.png",
+    imageAbovePitchDeckInset: true,
     pitchDeck: [
       "/projects/mara-beauty-deck/01.png",
       "/projects/mara-beauty-deck/02.png",

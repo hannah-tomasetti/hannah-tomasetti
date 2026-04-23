@@ -341,9 +341,9 @@ export default async function ProjectPage(props: PageProps<"/work/[slug]">) {
           <div
             style={{
               marginTop: project.videos.length > 0 ? sectionGapTight : sectionGap,
-              width: "calc(100% + 2 * clamp(20px, 4vw, 40px))",
-              marginLeft: "calc(-1 * clamp(20px, 4vw, 40px))",
-              marginRight: "calc(-1 * clamp(20px, 4vw, 40px))",
+              width: project.imageAbovePitchDeckInset ? "100%" : "calc(100% + 2 * clamp(20px, 4vw, 40px))",
+              marginLeft: project.imageAbovePitchDeckInset ? 0 : "calc(-1 * clamp(20px, 4vw, 40px))",
+              marginRight: project.imageAbovePitchDeckInset ? 0 : "calc(-1 * clamp(20px, 4vw, 40px))",
               overflow: "hidden",
               background: "transparent",
               lineHeight: 0,
