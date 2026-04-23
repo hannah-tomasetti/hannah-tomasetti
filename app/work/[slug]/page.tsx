@@ -223,15 +223,28 @@ export default async function ProjectPage(props: PageProps<"/work/[slug]">) {
             </p>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "clamp(8px, 1.5vw, 16px)" }}>
               {project.inspirationVideos.map((id) => (
-                <div key={id} style={{ position: "relative", aspectRatio: "16/9", background: "var(--border)", overflow: "hidden" }}>
-                  <iframe
-                    src={`https://www.youtube.com/embed/${id}`}
-                    title={`Inspiration video ${id}`}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    style={{ position: "absolute", inset: 0, width: "100%", height: "100%", border: "none" }}
+                <a
+                  key={id}
+                  href={`https://www.youtube.com/watch?v=${id}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ position: "relative", display: "block", aspectRatio: "16/9", background: "var(--border)", overflow: "hidden" }}
+                >
+                  <img
+                    src={`https://img.youtube.com/vi/${id}/hqdefault.jpg`}
+                    alt="Inspiration video"
+                    style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
                   />
-                </div>
+                  {/* Play button overlay */}
+                  <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", background: "rgba(0,0,0,0.25)", transition: "background 0.2s" }}
+                    onMouseEnter={e => (e.currentTarget as HTMLElement).style.background = "rgba(0,0,0,0.45)"}
+                    onMouseLeave={e => (e.currentTarget as HTMLElement).style.background = "rgba(0,0,0,0.25)"}
+                  >
+                    <div style={{ width: "48px", height: "48px", borderRadius: "50%", background: "rgba(255,255,255,0.9)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                      <div style={{ width: 0, height: 0, borderTop: "9px solid transparent", borderBottom: "9px solid transparent", borderLeft: "16px solid #111", marginLeft: "3px" }} />
+                    </div>
+                  </div>
+                </a>
               ))}
             </div>
           </div>
