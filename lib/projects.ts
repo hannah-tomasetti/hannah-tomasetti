@@ -310,6 +310,7 @@ Throughout the final execution of skram, I led a cross-functional team spanning 
   },
   {
     slug: "poppi-x-glow-recipe",
+    hidden: true,
     title: "Poppi x Glow Recipe",
     subtitle: "Brand Collaboration",
     category: "Packaging Design",
