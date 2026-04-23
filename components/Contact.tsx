@@ -59,7 +59,7 @@ export default function Contact() {
             marginBottom: "36px",
           }}
         >
-          Let's connect for any work opportunities or collaborations:
+          Connect for any work opportunities or collaborations:
         </h2>
 
         <div style={{ display: "inline-flex", alignItems: "center", gap: "clamp(12px, 2vw, 24px)", flexWrap: "wrap", justifyContent: "center" }}>
@@ -68,7 +68,7 @@ export default function Contact() {
           </a>
 
           <a
-            href="https://linkedin.com/in/hannah-tomasetti"
+            href="https://www.linkedin.com/in/hannahtomasetti"
             target="_blank"
             rel="noopener noreferrer"
             style={contactLinkStyle}
