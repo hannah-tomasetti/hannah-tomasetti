@@ -247,7 +247,7 @@ Throughout the final execution of skram, I led a cross-functional team spanning 
       "7e-qe3RYXWw",
     ],
     mockups: [],
-    videos: ["/projects/DS%26DURGA-film.mp4"],
+    videos: ["/projects/DS&DURGA-film.mp4"],
     videoSectionTitle: "Comfort in Chaos",
     pitchDeck: [
       "/projects/ds-durga-deck/01.png",
