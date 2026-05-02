@@ -160,7 +160,7 @@ To close out my time with the brand, I led a full Product Detail Page (PDP) audi
     mockCampaign: true,
     title: "skram",
     subtitle: "Senior Capstone — Brand Launch",
-    category: "Health & Wellness",
+    category: "Brand Development",
     year: "2025",
     dateRange: "Jan 2025 – May 2025",
     skills: ["Brand Identity", "Product Development", "Packaging Design", "Social Strategy", "Marketing", "Adobe Photoshop", "Adobe Illustrator", "Adobe Premiere Pro", "Microsoft Excel"],
