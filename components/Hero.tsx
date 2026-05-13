@@ -1,11 +1,9 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 export default function Hero() {
   const headlineRef = useRef<HTMLHeadingElement>(null);
-  const [heroImageFailed, setHeroImageFailed] = useState(false);
-
   useEffect(() => {
     const el = headlineRef.current;
     if (!el) return;
@@ -52,32 +50,14 @@ export default function Hero() {
           alignItems: "stretch",
         }}
       >
-        {/* Photo */}
-        <div style={{ aspectRatio: "4/5", maxWidth: "420px", background: "var(--border)", overflow: "hidden", position: "relative" }}>
-          <img
-            src="/hannah-hero.jpg"
-            alt="Hannah Tomasetti"
-            style={{ width: "100%", height: "100%", objectFit: "cover", display: heroImageFailed ? "none" : "block" }}
-            onError={() => setHeroImageFailed(true)}
-          />
-          {heroImageFailed && (
-            <div
-              style={{
-                position: "absolute",
-                inset: 0,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                color: "var(--text-muted)",
-                fontSize: "0.75rem",
-                letterSpacing: "0.1em",
-                textTransform: "uppercase",
-                fontFamily: "Poppins",
-              }}
-            >
-              Photo unavailable
-            </div>
-          )}
+        {/* Photos */}
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+          <div style={{ background: "var(--border)", aspectRatio: "4/3", overflow: "hidden" }}>
+            <img src="/about-2.jpg" alt="Hannah Tomasetti" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+          </div>
+          <div style={{ background: "var(--border)", aspectRatio: "4/3", overflow: "hidden" }}>
+            <img src="/about-1.jpg" alt="Hannah Tomasetti" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+          </div>
         </div>
 
         {/* Blurb */}
@@ -86,12 +66,26 @@ export default function Hero() {
             A little about me…
           </p>
           <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.5vw, 18px)", lineHeight: 1.75, color: "var(--text)", fontWeight: 300 }}>
-            I am a digital designer specializing in digital marketing and AI Integration.
+            I am a digital designer and marketing professional specializing in graphic design, user experience and AI-integration. Whether I am designing campaign assets, developing brand strategy, or building digital experiences, my focus is always creating with intention.
+          </p>
+          <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.5vw, 18px)", lineHeight: 1.75, color: "var(--text)", fontWeight: 300, marginTop: "1.25em" }}>
+            My goal is to support brands in their integrated marketing efforts. I am looking to build experience developing community, crafting strategy across the full marketing funnel, and creating visual assets that drive engagement and brand growth. I am drawn to early-stage and fast-moving environments where design and marketing intersect.
+          </p>
+          <p style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.5vw, 18px)", lineHeight: 1.75, color: "var(--text)", fontWeight: 300, marginTop: "1.25em" }}>
+            My academic foundation comes from two distinct experiences. Studying at the Savannah College of Art &amp; Design (SCAD), I developed my design process, learned to embrace critique, and led cross-functional projects from concept through execution. A year at Syracuse University introduced me to the basic capabilities of integrating technology. I have since then continued that education independently, building web platforms with AI tools like Claude Code, Cursor, and Vercel. Everyday, I explore new ways to accelerate the creative process, without losing the human touch or thinking behind it.
           </p>
 
-          <div style={{ marginTop: "40px", display: "flex", gap: "12px", flexWrap: "wrap" }}>
-            {["UX Design", "Brand Strategy", "Packaging Design", "Digital Marketing", "Graphic Design", "Research & Development", "Vibe Coding"].map((tag) => (
-              <span key={tag} className="tag">{tag}</span>
+          <div style={{ marginTop: "32px", display: "flex", flexDirection: "column", gap: "10px" }}>
+            {[
+              { name: "Syracuse University iSchool", dates: "2020 - 2021" },
+              { name: "Savannah College of Art and Design", dates: "2022–2025" },
+            ].map(({ name, dates }) => (
+              <div key={name} style={{ display: "flex", gap: "10px", alignItems: "center" }}>
+                <div style={{ width: "6px", height: "6px", borderRadius: "50%", background: "var(--text)", flexShrink: 0 }} />
+                <span style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.5vw, 18px)", letterSpacing: "0.02em", color: "var(--text-muted)" }}>
+                  {name} <span style={{ color: "var(--text-muted)", opacity: 0.6 }}>({dates})</span>
+                </span>
+              </div>
             ))}
           </div>
         </div>

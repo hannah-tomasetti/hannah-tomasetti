@@ -42,19 +42,6 @@ export default function About() {
             My academic foundation draws from two distinct experiences. At the Savannah College of Art and Design, I developed my design process, learned to embrace critique, and led cross-functional projects from concept to execution. A year at Syracuse University introduced me to the technical side, where I picked up HTML and CSS. I have continued that education independently, exploring how AI can enhance and accelerate the creative process. I now build with tools like Cursor, Claude Code, and Vercel, bringing design thinking directly into the design process.
           </p>
 
-          <div style={{ marginTop: "32px", display: "flex", flexDirection: "column", gap: "10px" }}>
-            {[
-              { name: "Syracuse University iSchool", dates: "2020 - 2021" },
-              { name: "Savannah College of Art and Design", dates: "2022–2025" },
-            ].map(({ name, dates }) => (
-              <div key={name} style={{ display: "flex", gap: "10px", alignItems: "center" }}>
-                <div style={{ width: "6px", height: "6px", borderRadius: "50%", background: "var(--text)", flexShrink: 0 }} />
-                <span style={{ fontFamily: "'Merriweather', serif", fontSize: "clamp(14px, 1.5vw, 18px)", letterSpacing: "0.02em", color: "var(--text-muted)" }}>
-                  {name} <span style={{ color: "var(--text-muted)", opacity: 0.6 }}>({dates})</span>
-                </span>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>
