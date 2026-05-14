@@ -53,7 +53,7 @@ export default function Nav() {
 
       {/* Right */}
       <div style={{ display: "flex", gap: "10px" }}>
-        <Link href="/work" className="nav-pill">Works</Link>
+        <Link href="/#work" className="nav-pill">Works</Link>
         <Link href="/#contact" className="nav-pill">Contact</Link>
       </div>
     </nav>

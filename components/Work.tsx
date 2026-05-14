@@ -4,17 +4,15 @@ import { useState } from "react";
 import Link from "next/link";
 import { projects as allProjects } from "@/lib/projects";
 
-const projects = allProjects.filter((p) => !p.hidden).slice(0, 4);
+const projects = allProjects.filter((p) => !p.hidden);
 
 export default function Work() {
   return (
     <section id="work" style={{ padding: "clamp(40px, 5vw, 80px) clamp(20px, 4vw, 40px)" }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "clamp(32px, 5vw, 60px)" }}>
-        <Link href="/work" style={{ textDecoration: "none" }}>
           <h2 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 700, fontSize: "clamp(28px, 5vw, 56px)", letterSpacing: "-0.02em", textTransform: "uppercase", color: "var(--text)" }}>
             Works
           </h2>
-        </Link>
         <span style={{ fontFamily: "'Merriweather', serif", fontSize: "0.85rem", fontStyle: "italic", color: "var(--text-muted)" }}>
           Selected projects
         </span>
